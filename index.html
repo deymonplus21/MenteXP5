@@ -3,16 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MenteXP Básico</title>
+  <title>MenteXP Avanzado</title>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <div class="container">
     <h1>MenteXP</h1>
-    <div id="question-container"></div>
-    <button id="next-button">Siguiente</button>
-    <button id="restart-button" style="display:none;">Jugar nueva ronda</button>
+
+    <div id="inicio">
+      <p>Ingresa tu nombre:</p>
+      <input type="text" id="nombreJugador" placeholder="Tu nombre" />
+      <button onclick="iniciarJuego()">Comenzar</button>
+    </div>
+
+    <div id="juego" style="display:none;">
+      <p id="jugador"></p>
+      <p id="puntaje"></p>
+      <p id="temporizador"></p>
+      <div id="question-container"></div>
+      <button id="next-button" style="display:none;">Siguiente</button>
+    </div>
+
+    <div id="final" style="display:none;">
+      <h2>¡Ronda terminada!</h2>
+      <p id="resultadoFinal"></p>
+      <button onclick="jugarOtraRonda()">Jugar otra ronda</button>
+    </div>
   </div>
+
   <script src="js/juego.js"></script>
 </body>
 </html>
