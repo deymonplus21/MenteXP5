@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +13,16 @@ body {
 
 .container {
   max-width: 600px;
+  padding: 20px;
 }
 
 button {
   padding: 10px 20px;
   margin: 10px;
+  font-size: 16px;
+}
+
+input {
+  padding: 10px;
   font-size: 16px;
 }
